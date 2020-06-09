@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+/* Global Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+margin: 0px;
+padding: 0px;
+}
+
+body {
+  font-family: Courier, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  text-align: center;
+  width: 75vw;
+  margin: auto;
+}
+
+/* Header Styling */
+
+header {
+  background: linear-gradient( rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+header p {
+  font-size: 5rem;
+}
+
+header img {
+  width: 100%;
+}
+
+.intro {
+  font-family: "Major Mono Display", monospace;
+}
+
+/* Main Styling */
+
+img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 5px #aaa;
+}
+
+p {
+  font-size: 18px;
+}
+
+hr {
+  width: 50%;
+}
+
+  /* Footer Styling */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #777;
+  margin-bottom: 0px;
+  padding-bottom: 18px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+/* Link Styling */
+
+a:link {
+  text-decoration: none;
+  color: #777;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+a:active {
+  text-decoration: underline;
+  color: red;
+}
