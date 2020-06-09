@@ -23,6 +23,10 @@ body {
   margin: auto;
 }
 
+li {
+  list-style-position: inside;
+}
+
 /* Header Styling */
 
 header {
