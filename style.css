@@ -7,8 +7,6 @@
 }
 
 html {
-/* margin: 0px;
-padding: 0px; */
 width: 100vw;
 }
 
@@ -16,7 +14,6 @@ body {
   font-family: Courier, sans-serif;
   margin: 0px;
   padding: 0px;
-  width: 100%;
 }
 
 .wrapper {
@@ -106,4 +103,12 @@ a:hover {
 a:active {
   text-decoration: underline;
   color: red;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 500px) {
+  header p {
+    font-size: 2.5rem;
+  }
 }
