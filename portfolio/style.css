@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+/* Global Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Courier, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  margin: 100px 0;
+}
+
+.wrapper {
+  text-align: center;
+  width: 75vw;
+  margin: auto;
+}
+
+li {
+  list-style-position: inside;
+}
+
+h1 {
+  padding-bottom: 25px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.left-aligned {
+  text-align: left;
+}
+
+.bg-color {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+/* Flexbox */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin: 15px 0;
+}
+
+.item-double {
+  flex: 2;
+}
+
+
+
+/* Header Styling */
+
+header {
+  background: linear-gradient( rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw; 
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+header p {
+  font-size: 2.5rem;
+}
+
+header img {
+  width: 100vw;
+}
+
+.intro {
+  font-family: "Major Mono Display", monospace;
+}
+
+/* Nav Styling */
+
+header nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Major Mono Display', monospace;
+  font-size: 14px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  max-width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+header nav ul li a {
+  margin: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #333;
+  text-decoration: none !important;
+}
+
+/* Main Styling */
+
+img.portrait {
+  border-radius: 10px;
+  /*box-shadow: 5px 5px 8px 5px #aaa;*/
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 18px;
+}
+
+hr {
+  width: 50%;
+}
+
+/* Projects Cards */
+    
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 15px 15px;
+}
+.card-image {
+  background-color: lightgray;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  background-color: lightgray;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px 20px;
+  margin-top: 0;
+  border-bottom: 2px solid darkgray;
+}
+
+.card-description {
+  font-size: 12px;
+  overflow-y: scroll;
+}
+
+.card-width {
+  max-width: 300px;
+  max-height: 466px;
+}
+
+/* Footer Styling */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #777;
+  margin-bottom: 0px;
+  padding-bottom: 18px;
+  width: 100vw;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+/* Link Styling */
+
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+a:active {
+  text-decoration: underline;
+  color: red;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 800px) {
+  header p {
+    font-size: 5rem;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  header nav ul li a:link {
+    color: #fff;
+  }
+
+  header nav ul li a:hover {
+    color: #aaa;
+  }
+
+  section::before {
+    display: block;
+    content: "";
+    margin-top: -72px;
+    height: 72px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  #about::before {
+    display: block;
+    content: "";
+    margin-top: -200px;
+    height: 200px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  #about {
+    border-top: 68px solid transparent;
+    margin-top: -68px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+}
