@@ -109,6 +109,10 @@ header nav ul {
   padding-left: 0;
 }
 
+header nav ul li:first-child a{
+  margin-left: auto;
+}
+
 
 header nav ul li a {
   margin: 0 20px 0 0;
@@ -117,6 +121,10 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #333;
   text-decoration: none !important;
+}
+
+.last-nav {
+  margin-right: 0px;
 }
 
 /* Main Styling */
