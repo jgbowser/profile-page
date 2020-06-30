@@ -247,15 +247,6 @@ a:active {
     pointer-events: none;
   }
 
-  #about::before {
-    display: block;
-    content: "";
-    margin-top: -200px;
-    height: 200px;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
   #about {
     border-top: 68px solid transparent;
     margin-top: -68px;
