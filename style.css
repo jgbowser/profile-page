@@ -6,9 +6,6 @@
   box-sizing: border-box;
 }
 
-/*html {
-width: 100vw;
-}*/
 
 body {
   font-family: Courier, sans-serif;
@@ -93,6 +90,35 @@ header img {
   font-family: "Major Mono Display", monospace;
 }
 
+/* Nav Styling */
+
+header nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'Major Mono Display', monospace;
+  font-size: 14px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  max-width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+header nav ul li a {
+  margin: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #333;
+  text-decoration: none !important;
+}
+
 /* Main Styling */
 
 img.portrait {
@@ -112,14 +138,6 @@ hr {
 }
 
 /* Projects Cards */
-
-/*<div class="card card-width">
-			<div class="card-image">
-
-			</div>
-			<div class="card-title">Future Project</div>
-		</div>
-    </div> */
     
 .card {
   display: flex;
@@ -200,4 +218,50 @@ a:active {
   .group {
     flex-direction: row;
   }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  header nav ul li a:link {
+    color: #fff;
+  }
+
+  header nav ul li a:hover {
+    color: #aaa;
+  }
+
+  section::before {
+    display: block;
+    content: "";
+    margin-top: -72px;
+    height: 72px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  #about::before {
+    display: block;
+    content: "";
+    margin-top: -200px;
+    height: 200px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  #about {
+    border-top: 68px solid transparent;
+    margin-top: -68px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
 }
