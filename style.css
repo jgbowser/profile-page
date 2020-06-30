@@ -102,7 +102,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100vw; 
+  width: 100%;
   margin-top: 0px;
   padding-top: 20px;
 }
@@ -122,13 +122,14 @@ header img {
 /* Nav Styling */
 
 header nav {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
   font-family: 'Major Mono Display', monospace;
   font-size: 14px;
   display: flex;
   flex: 1;
   justify-content: center;
   width: 100%;
+  
 }
 
 header nav ul {
@@ -160,7 +161,6 @@ header nav ul li a:hover {
 
 img.portrait {
   border-radius: 10px;
-  /*box-shadow: 5px 5px 8px 5px #aaa;*/
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -171,7 +171,16 @@ p {
 }
 
 hr {
-  width: 50%;
+  width: 75%;
+}
+
+.item ol {
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+.item ol li {
+  display: inline-flex;
 }
 
 /* Projects Cards */
@@ -217,7 +226,7 @@ footer {
   background-color: #777;
   margin-bottom: 0px;
   padding-bottom: 18px;
-  width: 100vw;
+  max-width: 100%;
 }
 
 footer p {
@@ -232,7 +241,7 @@ a:link {
 }
 
 a:visited {
-  color: red;
+  color: #000;
 }
 
 a:hover {
@@ -245,7 +254,7 @@ a:active {
   color: red;
 }
 
-/* Media Query */
+/* Media Query for Desktop */
 
 @media only screen and (min-width: 800px) {
 
@@ -261,19 +270,26 @@ a:active {
     flex-direction: row;
   }
 
+ 
+
   header nav {
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 1);
     font-size: 22px;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    right: 0;
+    overflow-block: hidden;
   }
 
   header nav ul li a:link {
     color: #fff;
+  }
+
+  header nav ul li a:visited {
+    color: #ddd;
   }
 
   header nav ul li a:hover {
@@ -301,4 +317,31 @@ a:active {
     width: 66%;
   }
 
+}
+
+/* Smallest Screens Media Query*/
+
+@media all and (max-width: 413px) {
+
+  header h2, 
+  header p {
+    color: #fff;
+  }
+
+  header {
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 0;
+    margin-bottom: 200px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    padding: 10px 0;
+  }
 }
