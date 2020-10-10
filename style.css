@@ -195,7 +195,8 @@ hr {
   overflow: hidden;
   margin: 15px 15px;
 }
-.card-image {
+.card-image-dc,
+.card-image-srs {
   background-image: url('./images/DiscCaddy-screenshot.jpg');
   background-position: center;
   background-size: contain;
@@ -205,6 +206,11 @@ hr {
   /* background-color: lightgray;
   justify-content: center;
   align-items: center; */
+}
+
+.card-image-srs {
+  background-image: url('./images/learn.png');
+  height: 595px;
 }
 
 .card-title {
